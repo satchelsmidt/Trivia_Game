@@ -1,3 +1,67 @@
 li{
     list-style: none;
+    font-family: 'Abel', sans-serif;
+}
+
+body{
+    text-align: center;
+    background: url("../images/extreme.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+}
+
+h1{
+    margin: 20px;
+    padding: 10px;
+    font-family: 'Geostar', cursive;
+    font-size: 50px;
+    float: left;
+}
+
+p{
+    font-family: 'Anton', sans-serif;
+}
+
+#introText{
+    font-size: 45px;
+}
+
+.startContent{
+    clear: both;
+}
+
+#countdownTimer{
+    font-size: 30px;
+    margin-bottom: 30px;
+    clear: both;
+}
+
+#mainContent{
+    width: 525px;
+    height: 320px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    padding: 20px;
+    background: lightblue;
+    overflow: auto;
+}
+
+#formContent{
+    margin-bottom: 0px;
+}
+
+#results{
+    font-size: 50px;
+    font-family: 'Anton', sans-serif;
+}
+
+#startButton{
+    font-family: 'Abel', sans-serif;
+    font-size: 20px;
+    background: lightblue;
+    border-radius: 25px;
+    width: 200px;
+    height: 40px;
 }

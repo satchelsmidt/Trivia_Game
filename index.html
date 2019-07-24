@@ -7,50 +7,57 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
+    <link href="https://fonts.googleapis.com/css?family=Abel|Anton|Geostar&display=swap" rel="stylesheet">
+</head>    
 <body>
 
     <!-- Title (static throughout game) -->
-    <h1>Extreme Trivia Game</h1>
+    <h1><strong>Extreme Trivia Game</strong></h1>
     <br>
 
-    <!-- Start Button -->
-    <div class="startContent">
-        <button id="startButton">CLICK HERE TO START</button>
+    
+        <!-- Start Button -->
+        <div class="startContent">
+            <button id="startButton">CLICK HERE TO START</button>
+        </div>
+
+        <!-- Timer div -->
+        <div id="countdownTimer"></div>
+
+        <br>
+    <div id="mainContent">
+        
+        <div id="formContent">
+            <p id="introText">See if you are a master of all things 'Extreme' in this wild trivia game designed to test even the most hard-core of athletes!</p>
+            <!-- Question 1 div -->
+            <div id="question1"></div>
+
+            <br>
+
+            <!-- Question 2 div -->
+            <div id="question2"></div>
+
+            <br>
+
+            <div id="question3"></div>
+            
+            <br>
+
+            <div id="question4"></div>
+            
+            <br>
+
+            <div id="question5"></div>
+            
+            <br>
+
+            <div id="question6"></div>
+        </div>
     </div>
 
-    <!-- Timer div -->
-    <div id="countdownTimer"></div>
+    <!-- <div id="results"></div> -->
 
-    <br>
-
-    <div id="formContent">
-        <!-- Question 1 div -->
-        <div id="question1"></div>
-
-        <br>
-
-        <!-- Question 2 div -->
-        <div id="question2"></div>
-
-        <br>
-
-        <div id="question3"></div>
-        
-        <br>
-
-        <div id="question4"></div>
-        
-        <br>
-
-        <div id="question5"></div>
-        
-        <br>
-
-        <div id="question6"></div>
-    </div>
-    <div id="results"></div>
-
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type= "text/javascript" src="assets/javascript/game.js"></script>
