@@ -56,7 +56,7 @@ $(document).ready(function(){
     var q6_4 = $("<input type='radio' name='q6' value='South Africa' id='q6_4'> South Africa </input>")
     
     //Set our number counter to 100.
-    var number = 10;
+    var number = 30;
     //Variable that will hold our interval ID when we execute the "run" function
     var intervalId;
 
@@ -72,6 +72,17 @@ $(document).ready(function(){
 
         //Begin timer function
         run();
+
+        $("#mainContent").css({
+            "background":"lightblue", 
+            "width":"525px",
+            "height":"320px",
+            "margin":"0 auto",
+            "margin-bottom":"0px",
+            "padding":"20px",
+            "overflow":"auto"})
+
+        // 
 
         //Create Question 1 content
         $(q1List).append(q1_1);
@@ -188,7 +199,7 @@ $(document).ready(function(){
         else if(document.getElementById("q4_3").checked === true){
             numWrong = numWrong + 1;
         }
-        else if(document.getElementById("q34_4").checked === true){
+        else if(document.getElementById("q4_4").checked === true){
             numWrong = numWrong + 1;
         }
         else{
@@ -234,7 +245,8 @@ $(document).ready(function(){
 
     //Function resets the interval value each time it is run. Sets the interval id variable to drop by 1 every second
     function run() {
-        clearInterval(intervalId);
+        // clearInterval(intervalId);
+        stop();
         intervalId = setInterval(decrement, 1000);
     }
 
@@ -247,9 +259,10 @@ $(document).ready(function(){
         $("#countdownTimer").html("<h2>" + number + "</h2>");
 
         //  Once number hits zero...
-        if (number === 0) {
+        if (number <= 0) {
             //Run the stop function.
             stop();
+            console.log("TEST 1")
             checkAnswersOne();
             console.log(q1_3)
             checkAnswersTwo()
@@ -262,6 +275,8 @@ $(document).ready(function(){
             console.log(q3_2)
             checkAnswersSix()
             console.log(q3_3)
+            console.log("TEST 2")
+
 
             //Alert the user that time is up.
             alert("Time Up!");
@@ -280,8 +295,7 @@ $(document).ready(function(){
             $(resultsDiv).css("font-size", "30px");
             $(resultsDiv).css("font-family", "'Anton', sans-serif");
             $("#formContent").append(resultsDiv);
-           
-        }
+       }
     }
 
     function stop() {

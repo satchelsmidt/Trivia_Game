@@ -37,8 +37,8 @@ p{
     margin-bottom: 30px;
     clear: both;
 }
-
-#mainContent{
+/* 
+#formContent{
     width: 525px;
     height: 320px;
     margin: 0 auto;
@@ -46,7 +46,7 @@ p{
     padding: 20px;
     background: lightblue;
     overflow: auto;
-}
+} */
 
 #formContent{
     margin-bottom: 0px;
@@ -65,3 +65,10 @@ p{
     width: 200px;
     height: 40px;
 }
+/* 
+.startContent{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
